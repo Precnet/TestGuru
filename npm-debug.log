@@ -1,0 +1,244 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/share/npm/bin/npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--scripts-prepend-node-path=auto' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData @rails/ujs
+20 silly mapToRegistry name @rails/ujs
+21 silly mapToRegistry scope (from package name) @rails
+22 verbose mapToRegistry no registry URL found in name for scope @rails
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/@rails%2fujs
+26 silly fetchNamedPackageData turbolinks
+27 silly mapToRegistry name turbolinks
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry uri https://registry.npmjs.org/turbolinks
+31 silly fetchNamedPackageData @rails/activestorage
+32 silly mapToRegistry name @rails/activestorage
+33 silly mapToRegistry scope (from package name) @rails
+34 verbose mapToRegistry no registry URL found in name for scope @rails
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry uri https://registry.npmjs.org/@rails%2factivestorage
+38 silly fetchNamedPackageData @rails/actioncable
+39 silly mapToRegistry name @rails/actioncable
+40 silly mapToRegistry scope (from package name) @rails
+41 verbose mapToRegistry no registry URL found in name for scope @rails
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/@rails%2factioncable
+45 verbose get https://registry.npmjs.org/@rails%2fujs not expired, no request
+46 silly resolveWithNewModule @rails/ujs@6.0.1 checking installable status
+47 silly cache add args [ '@rails/ujs@^6.0.0', null ]
+48 verbose cache add spec @rails/ujs@^6.0.0
+49 silly cache add parsed spec Result {
+49 silly cache add   raw: '@rails/ujs@^6.0.0',
+49 silly cache add   scope: '@rails',
+49 silly cache add   name: '@rails/ujs',
+49 silly cache add   rawSpec: '^6.0.0',
+49 silly cache add   spec: '>=6.0.0 <7.0.0',
+49 silly cache add   type: 'range' }
+50 silly addNamed @rails/ujs@>=6.0.0 <7.0.0
+51 verbose addNamed ">=6.0.0 <7.0.0" is a valid semver range for @rails/ujs
+52 silly addNameRange { name: '@rails/ujs', range: '>=6.0.0 <7.0.0', hasData: false }
+53 silly mapToRegistry name @rails/ujs
+54 silly mapToRegistry scope (from package name) @rails
+55 verbose mapToRegistry no registry URL found in name for scope @rails
+56 silly mapToRegistry using default registry
+57 silly mapToRegistry registry https://registry.npmjs.org/
+58 silly mapToRegistry uri https://registry.npmjs.org/@rails%2fujs
+59 verbose addNameRange registry:https://registry.npmjs.org/@rails%2fujs not in flight; fetching
+60 verbose get https://registry.npmjs.org/@rails%2factioncable not expired, no request
+61 silly resolveWithNewModule @rails/actioncable@6.0.1 checking installable status
+62 silly cache add args [ '@rails/actioncable@^6.0.0', null ]
+63 verbose cache add spec @rails/actioncable@^6.0.0
+64 silly cache add parsed spec Result {
+64 silly cache add   raw: '@rails/actioncable@^6.0.0',
+64 silly cache add   scope: '@rails',
+64 silly cache add   name: '@rails/actioncable',
+64 silly cache add   rawSpec: '^6.0.0',
+64 silly cache add   spec: '>=6.0.0 <7.0.0',
+64 silly cache add   type: 'range' }
+65 silly addNamed @rails/actioncable@>=6.0.0 <7.0.0
+66 verbose addNamed ">=6.0.0 <7.0.0" is a valid semver range for @rails/actioncable
+67 silly addNameRange { name: '@rails/actioncable',
+67 silly addNameRange   range: '>=6.0.0 <7.0.0',
+67 silly addNameRange   hasData: false }
+68 silly mapToRegistry name @rails/actioncable
+69 silly mapToRegistry scope (from package name) @rails
+70 verbose mapToRegistry no registry URL found in name for scope @rails
+71 silly mapToRegistry using default registry
+72 silly mapToRegistry registry https://registry.npmjs.org/
+73 silly mapToRegistry uri https://registry.npmjs.org/@rails%2factioncable
+74 verbose addNameRange registry:https://registry.npmjs.org/@rails%2factioncable not in flight; fetching
+75 verbose get https://registry.npmjs.org/turbolinks not expired, no request
+76 silly resolveWithNewModule turbolinks@5.2.0 checking installable status
+77 silly cache add args [ 'turbolinks@^5.2.0', null ]
+78 verbose cache add spec turbolinks@^5.2.0
+79 silly cache add parsed spec Result {
+79 silly cache add   raw: 'turbolinks@^5.2.0',
+79 silly cache add   scope: null,
+79 silly cache add   name: 'turbolinks',
+79 silly cache add   rawSpec: '^5.2.0',
+79 silly cache add   spec: '>=5.2.0 <6.0.0',
+79 silly cache add   type: 'range' }
+80 silly addNamed turbolinks@>=5.2.0 <6.0.0
+81 verbose addNamed ">=5.2.0 <6.0.0" is a valid semver range for turbolinks
+82 silly addNameRange { name: 'turbolinks', range: '>=5.2.0 <6.0.0', hasData: false }
+83 silly mapToRegistry name turbolinks
+84 silly mapToRegistry using default registry
+85 silly mapToRegistry registry https://registry.npmjs.org/
+86 silly mapToRegistry uri https://registry.npmjs.org/turbolinks
+87 verbose addNameRange registry:https://registry.npmjs.org/turbolinks not in flight; fetching
+88 verbose get https://registry.npmjs.org/@rails%2factivestorage not expired, no request
+89 silly resolveWithNewModule @rails/activestorage@6.0.1 checking installable status
+90 silly cache add args [ '@rails/activestorage@^6.0.0', null ]
+91 verbose cache add spec @rails/activestorage@^6.0.0
+92 silly cache add parsed spec Result {
+92 silly cache add   raw: '@rails/activestorage@^6.0.0',
+92 silly cache add   scope: '@rails',
+92 silly cache add   name: '@rails/activestorage',
+92 silly cache add   rawSpec: '^6.0.0',
+92 silly cache add   spec: '>=6.0.0 <7.0.0',
+92 silly cache add   type: 'range' }
+93 silly addNamed @rails/activestorage@>=6.0.0 <7.0.0
+94 verbose addNamed ">=6.0.0 <7.0.0" is a valid semver range for @rails/activestorage
+95 silly addNameRange { name: '@rails/activestorage',
+95 silly addNameRange   range: '>=6.0.0 <7.0.0',
+95 silly addNameRange   hasData: false }
+96 silly mapToRegistry name @rails/activestorage
+97 silly mapToRegistry scope (from package name) @rails
+98 verbose mapToRegistry no registry URL found in name for scope @rails
+99 silly mapToRegistry using default registry
+100 silly mapToRegistry registry https://registry.npmjs.org/
+101 silly mapToRegistry uri https://registry.npmjs.org/@rails%2factivestorage
+102 verbose addNameRange registry:https://registry.npmjs.org/@rails%2factivestorage not in flight; fetching
+103 verbose get https://registry.npmjs.org/@rails%2factioncable not expired, no request
+104 silly addNameRange number 2 { name: '@rails/actioncable',
+104 silly addNameRange   range: '>=6.0.0 <7.0.0',
+104 silly addNameRange   hasData: true }
+105 silly addNameRange versions [ '@rails/actioncable',
+105 silly addNameRange   [ '6.0.0-alpha',
+105 silly addNameRange     '6.0.0-beta1',
+105 silly addNameRange     '6.0.0-beta2',
+105 silly addNameRange     '6.0.0-beta3',
+105 silly addNameRange     '6.0.0-rc1',
+105 silly addNameRange     '6.0.0-rc2',
+105 silly addNameRange     '6.0.0',
+105 silly addNameRange     '6.0.1-rc1',
+105 silly addNameRange     '6.0.1',
+105 silly addNameRange     '6.0.2-rc1',
+105 silly addNameRange     '6.0.2-rc2',
+105 silly addNameRange     '6.0.2',
+105 silly addNameRange     '6.0.2-1' ] ]
+106 silly addNamed @rails/actioncable@6.0.2
+107 verbose addNamed "6.0.2" is a plain semver version for @rails/actioncable
+108 verbose get https://registry.npmjs.org/@rails%2factivestorage not expired, no request
+109 silly addNameRange number 2 { name: '@rails/activestorage',
+109 silly addNameRange   range: '>=6.0.0 <7.0.0',
+109 silly addNameRange   hasData: true }
+110 silly addNameRange versions [ '@rails/activestorage',
+110 silly addNameRange   [ '6.0.0-alpha',
+110 silly addNameRange     '6.0.0-beta1',
+110 silly addNameRange     '6.0.0-beta2',
+110 silly addNameRange     '6.0.0-beta3',
+110 silly addNameRange     '6.0.0-rc1',
+110 silly addNameRange     '6.0.0-rc2',
+110 silly addNameRange     '6.0.0',
+110 silly addNameRange     '6.0.1-rc1',
+110 silly addNameRange     '6.0.1',
+110 silly addNameRange     '6.0.2-rc1',
+110 silly addNameRange     '6.0.2-rc2',
+110 silly addNameRange     '6.0.2',
+110 silly addNameRange     '6.0.2-1' ] ]
+111 silly addNamed @rails/activestorage@6.0.2
+112 verbose addNamed "6.0.2" is a plain semver version for @rails/activestorage
+113 verbose get https://registry.npmjs.org/@rails%2fujs not expired, no request
+114 silly addNameRange number 2 { name: '@rails/ujs', range: '>=6.0.0 <7.0.0', hasData: true }
+115 silly addNameRange versions [ '@rails/ujs',
+115 silly addNameRange   [ '6.0.0-alpha',
+115 silly addNameRange     '6.0.0-beta1',
+115 silly addNameRange     '6.0.0-beta2',
+115 silly addNameRange     '6.0.0-beta3',
+115 silly addNameRange     '6.0.0-rc1',
+115 silly addNameRange     '6.0.0-rc2',
+115 silly addNameRange     '6.0.0',
+115 silly addNameRange     '6.0.1-rc1',
+115 silly addNameRange     '6.0.1',
+115 silly addNameRange     '6.0.2-rc1',
+115 silly addNameRange     '6.0.2-rc2',
+115 silly addNameRange     '6.0.2',
+115 silly addNameRange     '6.0.2-1' ] ]
+116 silly addNamed @rails/ujs@6.0.2
+117 verbose addNamed "6.0.2" is a plain semver version for @rails/ujs
+118 verbose get https://registry.npmjs.org/turbolinks not expired, no request
+119 silly addNameRange number 2 { name: 'turbolinks', range: '>=5.2.0 <6.0.0', hasData: true }
+120 silly addNameRange versions [ 'turbolinks',
+120 silly addNameRange   [ '5.0.0-beta3',
+120 silly addNameRange     '5.0.0-beta4',
+120 silly addNameRange     '5.0.0-beta5',
+120 silly addNameRange     '5.0.0',
+120 silly addNameRange     '5.0.1',
+120 silly addNameRange     '5.0.2',
+120 silly addNameRange     '5.0.3',
+120 silly addNameRange     '5.1.0',
+120 silly addNameRange     '5.1.1',
+120 silly addNameRange     '5.2.0-beta.1',
+120 silly addNameRange     '5.2.0',
+120 silly addNameRange     '5.3.0-beta.0',
+120 silly addNameRange     '5.3.0-beta.1' ] ]
+121 silly addNamed turbolinks@5.2.0
+122 verbose addNamed "5.2.0" is a plain semver version for turbolinks
+123 silly cache afterAdd @rails/actioncable@6.0.2
+124 verbose afterAdd /home/dadmin/.npm/@rails/actioncable/6.0.2/package/package.json not in flight; writing
+125 silly cache afterAdd @rails/activestorage@6.0.2
+126 verbose afterAdd /home/dadmin/.npm/@rails/activestorage/6.0.2/package/package.json not in flight; writing
+127 silly cache afterAdd @rails/ujs@6.0.2
+128 verbose afterAdd /home/dadmin/.npm/@rails/ujs/6.0.2/package/package.json not in flight; writing
+129 silly cache afterAdd turbolinks@5.2.0
+130 verbose afterAdd /home/dadmin/.npm/turbolinks/5.2.0/package/package.json not in flight; writing
+131 verbose afterAdd /home/dadmin/.npm/@rails/actioncable/6.0.2/package/package.json written
+132 verbose afterAdd /home/dadmin/.npm/turbolinks/5.2.0/package/package.json written
+133 verbose afterAdd /home/dadmin/.npm/@rails/activestorage/6.0.2/package/package.json written
+134 verbose afterAdd /home/dadmin/.npm/@rails/ujs/6.0.2/package/package.json written
+135 silly rollbackFailedOptional Starting
+136 silly rollbackFailedOptional Finishing
+137 silly runTopLevelLifecycles Starting
+138 silly runTopLevelLifecycles Finishing
+139 silly install printInstalled
+140 verbose stack Error: Error extracting /home/dadmin/.npm/@rails/actioncable/6.0.1/package.tgz archive: ENOENT: no such file or directory, open '/home/dadmin/.npm/@rails/actioncable/6.0.1/package.tgz'
+140 verbose stack     at ReadStream.<anonymous> (/usr/share/npm/lib/fetch-package-metadata.js:286:10)
+140 verbose stack     at emitOne (events.js:116:13)
+140 verbose stack     at ReadStream.emit (events.js:211:7)
+140 verbose stack     at /usr/share/npm/node_modules/graceful-fs/graceful-fs.js:179:14
+140 verbose stack     at /usr/share/npm/node_modules/graceful-fs/graceful-fs.js:230:16
+140 verbose stack     at FSReqWrap.oncomplete (fs.js:135:15)
+141 verbose cwd /home/dadmin/Desktop/thinknetica/tasks/TestGuru
+142 error Linux 5.3.0-26-generic
+143 error argv "/usr/bin/node" "/usr/share/npm/bin/npm-cli.js" "install" "--scripts-prepend-node-path=auto"
+144 error node v8.10.0
+145 error npm  v3.5.2
+146 error code EREADFILE
+147 error Error extracting /home/dadmin/.npm/@rails/actioncable/6.0.1/package.tgz archive: ENOENT: no such file or directory, open '/home/dadmin/.npm/@rails/actioncable/6.0.1/package.tgz'
+148 error If you need help, you may report this error at:
+148 error     <https://github.com/npm/npm/issues>
+149 verbose exit [ 1, true ]
