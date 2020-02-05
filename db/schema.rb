@@ -10,26 +10,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2020_02_05_131104) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "categories", primary_key: "cat_id", id: :serial, force: :cascade do |t|
-    t.string "title", limit: 50
+  create_table "categories", force: :cascade do |t|
+    t.string "title"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "questions", id: :serial, force: :cascade do |t|
-    t.string "body", limit: 100
+  create_table "questions", force: :cascade do |t|
+    t.string "title"
     t.integer "test"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "tests", primary_key: "test_id", id: :serial, force: :cascade do |t|
-    t.string "title", limit: 50
+  create_table "replies", force: :cascade do |t|
+    t.string "body"
+    t.integer "question"
+    t.boolean "is_correct"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "tests", force: :cascade do |t|
+    t.string "title"
     t.integer "category"
     t.integer "level"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "questions", "tests", column: "test", primary_key: "test_id", name: "questions_test_fkey"
-  add_foreign_key "tests", "categories", column: "category", primary_key: "cat_id", name: "tests_category_fkey"
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
 end
