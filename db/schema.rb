@@ -39,11 +39,9 @@ ActiveRecord::Schema.define(version: 2020_02_06_080859) do
 
   create_table "tests", primary_key: "test_id", force: :cascade do |t|
     t.string "title", null: false
-    t.integer "category_id"
     t.integer "level", default: 1, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["category_id"], name: "index_tests_on_category_id"
     t.index ["level"], name: "index_tests_on_level"
     t.index ["test_id"], name: "index_tests_on_test_id"
   end
