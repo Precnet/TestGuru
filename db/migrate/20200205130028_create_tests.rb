@@ -9,6 +9,7 @@ class CreateTests < ActiveRecord::Migration[6.0]
     end
 
     add_index :tests, :test_id
-    # add_reference(:categories, :category_id, foreign_key: true)
+    add_index :tests, :category_id
+    add_index :tests, :level
   end
 end
