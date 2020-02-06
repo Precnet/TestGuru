@@ -15,37 +15,42 @@ ActiveRecord::Schema.define(version: 2020_02_06_073753) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "answers", force: :cascade do |t|
+  create_table "answers", primary_key: "answer_id", force: :cascade do |t|
     t.string "body", null: false
-    t.integer "question", null: false
+    t.integer "question_id", null: false
     t.boolean "is_correct", default: false
+    t.index ["answer_id"], name: "index_answers_on_answer_id"
   end
 
-  create_table "categories", force: :cascade do |t|
-    t.string "title"
+  create_table "categories", primary_key: "category_id", force: :cascade do |t|
+    t.string "title", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["category_id"], name: "index_categories_on_category_id"
   end
 
-  create_table "questions", force: :cascade do |t|
+  create_table "questions", primary_key: "question_id", force: :cascade do |t|
     t.string "title", null: false
-    t.integer "test", null: false
+    t.integer "test_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["question_id"], name: "index_questions_on_question_id"
   end
 
-  create_table "tests", force: :cascade do |t|
+  create_table "tests", primary_key: "test_id", force: :cascade do |t|
     t.string "title", null: false
-    t.integer "category", null: false
+    t.integer "category_id", null: false
     t.integer "level", default: 1, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["test_id"], name: "index_tests_on_test_id"
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "name"
+  create_table "users", primary_key: "user_id", force: :cascade do |t|
+    t.string "name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_users_on_user_id"
   end
 
 end
