@@ -10,15 +10,15 @@ User.create(name: 'Admin')
 User.create(name: 'Bob')
 User.create(name: 'Alisa')
 
+Category.create(title: 'Programming')
+Category.create(title: 'History')
+Category.create(title: 'Math')
+
 Test.create(title: 'Ruby: Basics', level: 1, category_id: 1)
 Test.create(title: 'Ruby: Classes', level: 2, category_id: 1)
 Test.create(title: 'History: Dark Ages', level: 1, category_id: 2)
 Test.create(title: 'Math: Computations', level: 2, category_id: 3)
 Test.create(title: 'Math: High', level: 4, category_id: 3)
-
-Category.create(title: 'Programming')
-Category.create(title: 'History')
-Category.create(title: 'Math')
 
 Question.create(body: 'Question 1 for Ruby?', test_id: 1)
 Question.create(body: 'Question 2 for Ruby?', test_id: 1)
