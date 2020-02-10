@@ -65,3 +65,9 @@ Answer.create(body: 'Answer for Q2 Math high', is_correct: false, question_id: 1
 Answer.create(body: 'Answer for Q3 Math high', is_correct: true, question_id: 11)
 Answer.create(body: 'Answer for Q3 Math high', is_correct: false, question_id: 11)
 Answer.create(body: 'Answer for Q3 Math high', is_correct: false, question_id: 11)
+
+UserProfile.create(user_id: 2, test_id: 1, test_status: 'passed')
+UserProfile.create(user_id: 2, test_id: 2, test_status: 'failed')
+UserProfile.create(user_id: 3, test_id: 3, test_status: 'passed')
+UserProfile.create(user_id: 3, test_id: 4, test_status: 'passed')
+UserProfile.create(user_id: 3, test_id: 5, test_status: 'passed')
