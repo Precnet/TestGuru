@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2020_02_06_101318) do
   end
 
   create_table "questions", force: :cascade do |t|
-    t.string "title", null: false
+    t.string "body", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "test_id", null: false
