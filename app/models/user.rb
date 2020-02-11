@@ -1,5 +1,7 @@
+require_relative '../../app/models/test'
+
 class User < ApplicationRecord
-  def get_all_passed_tests_with_level(level)
+  def get_passed_tests_by(level)
     message = 'There is no such test level in Database!'
     raise ArgumentError, message unless level_exists? level
 
