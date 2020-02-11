@@ -1,5 +1,11 @@
-require 'rails_helper'
+# frozen_string_literal: true
 
-RSpec.describe Test, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+# require 'rspec'
+require 'rails_helper'
+require_relative '../../app/models/test'
+
+describe Test, type: :model do
+  context 'test management' do
+
+  end
 end
