@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'rspec'
+# require 'rspec'
 require 'rails_helper'
 require_relative '../../app/models/user'
 
