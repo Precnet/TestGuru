@@ -12,6 +12,6 @@ class User < ApplicationRecord
   private
 
   def level_exists?(level)
-    Test.level.include?(level)
+    Test.pluck(:level).include?(level)
   end
 end
