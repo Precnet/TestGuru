@@ -12,6 +12,10 @@ class Test < ApplicationRecord
   end
 
   def self.category_exists?(category)
-    Category.pluck(:title).include?(category)
+    category_occurrences = Category.where(title: category).count
+    message = "More than one instance of category: '#{category}' in DB!"
+    raise ArgumentError, message if category_occurrences > 1
+
+    !category_occurrences.zero?
   end
 end
