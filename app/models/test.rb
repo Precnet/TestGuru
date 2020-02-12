@@ -16,6 +16,6 @@ class Test < ApplicationRecord
     message = "More than one instance of category: '#{category}' in DB!"
     raise ArgumentError, message if category_occurrences > 1
 
-    !category_occurrences.zero?
+    category_occurrences.nonzero?
   end
 end
