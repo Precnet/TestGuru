@@ -7,8 +7,14 @@ class Test < ApplicationRecord
     message = "There is no category '#{category_name}' in Database!"
     raise ArgumentError, message unless category_exists?(category_name)
 
-    category_id = Category.where(title: category_name).pluck(:id)[0]
-    Test.where(category_id: category_id).order(title: :desc).pluck(:title)
+    # category_id = Category.where(title: category_name).pluck(:id)[0]
+    # Test.where(category_id: category_id).order(title: :desc).pluck(:title)
+    # p category_name
+    # pp joins("join categories on tests.category_id = categories.id where categories.title = '?' order by tests.title desc", category_name)
+    pp joins('join categories on tests.category_id = categories.id')
+        .where(categories: { title: category_name })
+        .order(title: :desc)
+         .pluck(:title)
   end
 
   def self.category_exists?(category)
