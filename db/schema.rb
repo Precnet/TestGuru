@@ -51,10 +51,10 @@ ActiveRecord::Schema.define(version: 2020_02_10_133237) do
 
   create_table "user_profiles", force: :cascade do |t|
     t.string "test_status"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
     t.bigint "test_id", null: false
     t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.index ["test_id"], name: "index_user_profiles_on_test_id"
     t.index ["test_status"], name: "index_user_profiles_on_test_status"
     t.index ["user_id"], name: "index_user_profiles_on_user_id"
