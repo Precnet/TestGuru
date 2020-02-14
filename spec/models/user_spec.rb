@@ -13,9 +13,5 @@ describe User, type: :model do
       expect(user_alisa.get_passed_tests_by(1)).to be_a_kind_of(Array)
       expect(user_alisa.get_passed_tests_by(3)).to be_a_kind_of(Array)
     end
-    it 'should raise an error with nonexistant level value' do
-      user_bob = User.find(2)
-      expect { user_bob.get_passed_tests_by(100) }.to raise_error(ArgumentError)
-    end
   end
 end
