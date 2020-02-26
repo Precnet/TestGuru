@@ -7,7 +7,7 @@ class Test < ApplicationRecord
   has_many :user_profiles
   has_many :users, through: :user_profiles
   belongs_to :category
-  belongs_to :user, foreign_key: 'author_id'
+  belongs_to :author, class_name: 'User', foreign_key: 'author_id'
   def self.get_test_by_category(category_name)
     pp joins('join categories on tests.category_id = categories.id')
       .where(categories: { title: category_name })
