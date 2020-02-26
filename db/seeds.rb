@@ -24,8 +24,9 @@ categories.each_key do |category_name|
   test_levels.each do |level|
     test_name = "#{category_name}: #{level}"
     level_index = test_levels.find_index(level) + 1
+    author = users[users.keys.sample].id
     id = categories[category_name].id
-    tests_data.append(title: test_name, level: level_index, category_id: id)
+    tests_data.append(title: test_name, level: level_index, category_id: id, author_id: author)
   end
 end
 tests = {}
