@@ -9,7 +9,7 @@ class Test < ApplicationRecord
   belongs_to :category
   belongs_to :author, class_name: 'User', foreign_key: 'author_id'
   def self.get_test_by_category(category_name)
-    pp joins('join categories on tests.category_id = categories.id')
+    pp joins(:category)
       .where(categories: { title: category_name })
       .order(title: :desc)
       .pluck(:title)
