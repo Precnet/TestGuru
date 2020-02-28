@@ -7,7 +7,7 @@ require_relative '../../app/models/test'
 describe Test, type: :model do
   context 'test creation' do
     it 'should validate title presence' do
-      Test.new.save
+      expect(Test.new.valid?).to eq(true)
     end
   end
   context 'test management' do
