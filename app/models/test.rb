@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative 'category'
-
 class Test < ApplicationRecord
   has_many :questions
   has_many :user_profiles
@@ -17,4 +15,5 @@ class Test < ApplicationRecord
       .order(title: :desc)
       .pluck(:title)
   }
+  scope :by_level, ->(level) { where(level: level).pluck(:title) }
 end
