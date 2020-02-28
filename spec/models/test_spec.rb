@@ -5,6 +5,11 @@ require 'rails_helper'
 require_relative '../../app/models/test'
 
 describe Test, type: :model do
+  context 'test creation' do
+    it 'should validate title presence' do
+      Test.new.save
+    end
+  end
   context 'test management' do
     it 'should return list of tests for category' do
       result_math = ['Math: middle', 'Math: high', 'Math: basic']
