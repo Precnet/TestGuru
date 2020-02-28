@@ -7,7 +7,13 @@ require_relative '../../app/models/test'
 describe Test, type: :model do
   context 'test creation' do
     it 'should validate title presence' do
-      expect(Test.new.valid?).to eq(true)
+      expect(Test.new.valid?).to eq(false)
+      expect(Test.new(title: 123, category_id: 'qwe', author_id: 'cde').valid?).to eq(false)
+      category_id = Category.all.map(&:id).sample
+      author_id = User.all.map(&:id).sample
+      expect(Test.new(title: 'Some new test',
+                      category_id: category_id,
+                      author_id: author_id).valid?).to eq(true)
     end
   end
   context 'test management' do
