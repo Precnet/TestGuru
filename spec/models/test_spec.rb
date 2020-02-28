@@ -30,6 +30,13 @@ describe Test, type: :model do
                  result: true }]
       cases.each { |t_case| expect(Test.new(t_case[:data]).valid?).to eq(t_case[:result]) }
     end
+    it 'should validate uniqueness of title+level combination' do
+      c_id = Category.all.map(&:id).sample
+      a_id = User.all.map(&:id).sample
+      existing_test = Test.all.sample
+      expect(Test.new(title: existing_test.title, category_id: c_id,
+                      author_id: a_id, level: existing_test.level).valid?).to eq(false)
+    end
   end
   context 'test management' do
     it 'should return list of tests for category' do
