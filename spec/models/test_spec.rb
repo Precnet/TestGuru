@@ -41,9 +41,9 @@ describe Test, type: :model do
   context 'test management' do
     it 'should return list of tests for category' do
       result_math = ['Math: middle', 'Math: high', 'Math: basic']
-      expect(Test.by_category('Math')).to eq(result_math)
+      expect(Test.get_test_by_category('Math')).to eq(result_math)
       result_programming = ['Programming: middle', 'Programming: high', 'Programming: basic']
-      expect(Test.by_category('Programming')).to eq(result_programming)
+      expect(Test.get_test_by_category('Programming')).to eq(result_programming)
     end
     it 'should return easy tests (level: 0..1)' do
       expect(Test.easy).to eq(Test.where(level: 0..1))
