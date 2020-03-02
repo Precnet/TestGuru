@@ -7,7 +7,10 @@ class Answer < ApplicationRecord
   private
 
   def validate_amount_per_question
-    if Answer.where(question_id: question_id).count >= 4
+    # if Answer.where(question_id: question_id).count >= 4
+    if question.nil?
+      errors.add(:question_id, 'Answer can not exist without a question!')
+    elsif question.answers.count >= 4
       errors.add(:question_id, 'Too many answers!')
     end
   end
