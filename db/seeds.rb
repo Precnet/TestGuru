@@ -10,7 +10,7 @@
 # USERS
 user_names = %w[Admin Bob Alisa]
 users = {}
-user_names.each { |name| users[name] = User.create(name: name) }
+user_names.each { |name| users[name] = User.create(name: name, email: name + '@email.com') }
 
 # CATEGORIES
 categories_names = %w[Programming History Math]
