@@ -17,7 +17,6 @@ class Test < ApplicationRecord
     joins(:category)
       .where(categories: { title: category_name })
   }
-  scope :by_level, ->(level) { where(level: level) }
 
   def self.get_test_by_category(category_name)
     by_category(category_name).order(title: :desc).pluck(:title)
